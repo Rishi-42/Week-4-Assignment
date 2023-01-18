@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700;900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* nav logo */
+header img {
+    display: block;
+    height: 84px;
+    cursor: pointer;
+}
+
+li,
+a,
+button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.menu_nav {
+    list-style: none;
+}
+
+.menu_nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.menu_nav li a {
+    transition: all 0.3s ease-in-out 0s;
+}
+/* user button  */
+button {
+    padding: 9px 12px;
+    border-radius: 15px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/* menu bar  */
+.menu_nav li a:hover {
+    color: rgb(255, 0, 0);
+    box-shadow: 3px 3px 3px red, 3px 3px 3px rgb(0, 0, 0);
+    border-radius: 4px;
+    margin: 10px;
+    padding: 12px;
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+ /* button animation  */
+header a button {  
+    animation-name: example;
+    animation-duration: 10s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/* Responsive grid layout */
+.gridView {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 75px;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  /* Folder container */
+  .folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    padding-top: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border-radius: 5px;
+  }
+
+  
+.folder:hover{
+box-shadow: 0px 13px 30px -14px rgb(0 0 0 / 50%);
+transition: all 0.3s ease;
+transform: scale(1.1);
+}
+
+/* Folder icon */
+  .folder img {
+    width: 150px;
+    height: 150px;
+  }
+/* horizontal line */
+hr{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+
+  
+/* The button to open the modal */
+#btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  max-width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+#btn:hover{
+    box-shadow: 0px 13px 30px -14px rgb(0 0 0 / 50%);
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  background-color: rgb(245, 243, 243);
+  margin: 10% auto;
+  padding: 20px;
+  max-width: 300px;
+  width: 80%;
+  border-radius: 0%;
+  box-shadow: 0px 13px 30px -14px rgb(0 0 0 / 50%);
+}
+
+.off{
+  float: right;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
